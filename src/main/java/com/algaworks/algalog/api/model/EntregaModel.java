@@ -8,6 +8,7 @@ import com.algaworks.algalog.domain.model.StatusEntrega;
 public class EntregaModel {
 
 	private Long id;
+	private ClienteResumoModel cliente;
 	private String nomeCliente;
 	private DestinatarioModel destinatario;
 	private BigDecimal taxa;
@@ -21,6 +22,14 @@ public class EntregaModel {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public ClienteResumoModel getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(ClienteResumoModel cliente) {
+		this.cliente = cliente;
 	}
 
 	public String getNomeCliente() {
